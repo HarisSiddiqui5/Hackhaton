@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define the regular Inter font (variable font) */
+/* Define the regular Inter font (variable font) */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900; /* Defines the weight range for the variable font */
+  font-style: normal;  /* Use normal style */
+}
+
+/* Define the italic Inter font (variable font) */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900; /* Defines the weight range for the variable font */
+  font-style: italic;  /* Use italic style */
+}
+
+/* Custom class for Inter font */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Apply Inter font globally */
+}
