@@ -1,9 +1,14 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname(); // Get the current path
+
+  // Function to check if the current route is active
+  const isActive = (path: string) => pathname === path;
 
   return (
     <div className="relative">
@@ -21,13 +26,31 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <nav className="hidden sm:flex gap-8 text-[#636270]">
-          <Link href="/" className="text-[#007580]">
-            Home  
+          <Link
+            href="/"
+            className={isActive('/') ? 'text-[#007580]' : 'hover:text-[#007580]'}
+          >
+            Home
           </Link>
-          <Link href="/shop">Shop</Link>
-          <Link href="/productsPage">Product</Link>
-          <Link href="/productsPage">Pages</Link>
-          <Link href="/aboutUs">About</Link>
+          <Link
+            href="/shop"
+            className={isActive('/shop') ? 'text-[#007580]' : 'hover:text-[#007580]'}
+          >
+            Shop
+          </Link>
+          <Link
+            href="/productsPage"
+            className={isActive('/productsPage') ? 'text-[#007580]' : 'hover:text-[#007580]'}
+          >
+            Product
+          </Link>
+          
+          <Link
+            href="/aboutUs"
+            className={isActive('/aboutUs') ? 'text-[#007580]' : 'hover:text-[#007580]'}
+          >
+            About
+          </Link>
         </nav>
 
         {/* Contact Info */}
@@ -39,14 +62,32 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute top-16 right-0 w-[250px] bg-white shadow-lg z-10 p-4 flex flex-col text-[#636270] space-y-4">
-          <Link href="#" className="text-[#007580]">
+        <div className="absolute top-16 right-0 w-[150px] bg-white shadow-lg z-10 p-4 flex flex-col text-[#636270] space-y-4">
+          <Link
+            href="/"
+            className={isActive('/') ? 'text-[#007580]' : 'hover:text-[#007580]'}
+          >
             Home
           </Link>
-          <Link href="">Shop</Link>
-          <Link href="">Product</Link>
-          <Link href="">Pages</Link>
-          <Link href="">About</Link>
+          <Link
+            href="/shop"
+            className={isActive('/shop') ? 'text-[#007580]' : 'hover:text-[#007580]'}
+          >
+            Shop
+          </Link>
+          <Link
+            href="/productsPage"
+            className={isActive('/productsPage') ? 'text-[#007580]' : 'hover:text-[#007580]'}
+          >
+            Product
+          </Link>
+          
+          <Link
+            href="/aboutUs"
+            className={isActive('/aboutUs') ? 'text-[#007580]' : 'hover:text-[#007580]'}
+          >
+            About
+          </Link>
           <div className="flex flex-col space-y-1 text-sm">
             <h1>Contact:</h1>
             <h1 className="text-[#272343]">(808) 555-0111</h1>

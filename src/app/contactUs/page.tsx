@@ -92,7 +92,7 @@ export default function ContactUs() {
             ></textarea>
           </div>
 
-          <button className="w-full md:w-[273px] mt-6 py-3 bg-[#029FAE] text-white font-medium rounded-md">
+          <button className="w-full md:w-[273px] mt-6 py-3 bg-[#029FAE] hover:bg-[#90dfe6] text-white font-medium rounded-md">
             Submit
           </button>
         </div>

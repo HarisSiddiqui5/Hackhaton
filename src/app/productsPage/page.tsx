@@ -135,12 +135,11 @@ export default function ProductPage() {
       <div>
         <h1 className='text-5xl font-medium mt-[70px] text-center'>Follow products and discounts on Instagram</h1>
         <div className='flex gap-2 mt-[60px] mb-[60px]'>
-            <Image src={p1} alt='' className='w-[186px] h-[186px]'/>
-            <Image src={p3} alt='' className='w-[186px] h-[186px]'/>
-            <Image src={p4} alt='' className='w-[186px] h-[186px]'/>
-            <Image src={p5} alt='' className='w-[186px] h-[186px]'/>
-            <Image src={p7} alt='' className='w-[186px] h-[186px]'/>
-            <Image src={p9} alt='' className='w-[186px] h-[186px]'/>
+            <Image src={p3} alt='' className='w-[175px] h-[186px]'/>
+            <Image src={p4} alt='' className='w-[175px] h-[186px]'/>
+            <Image src={p5} alt='' className='w-[175px] h-[186px]'/>
+            <Image src={p7} alt='' className='w-[175px] h-[186px]'/>
+            <Image src={p9} alt='' className='w-[175px] h-[186px] rounded-md'/>
         </div>
 
       </div>

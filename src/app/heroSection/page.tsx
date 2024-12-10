@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import RightArrow from '@/app/assets/right-arrow.png';
 import p1 from '@/app/assets/p1.png';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -13,10 +14,10 @@ export default function HeroSection() {
           <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl mt-4 lg:mt-6">
             Best Furniture <br />Collection for your <br />interior.
           </h1>
-          <button className="mt-6 lg:mt-10 flex justify-center sm:justify-center lg:justify-start items-center mx-auto lg:mx-0 bg-[#029FAE] text-white text-sm sm:text-base w-[140px] sm:w-[160px] lg:w-[171px] h-[40px] sm:h-[45px] lg:h-[51px] rounded-lg">
+          <Link href='/productsPage' className="mt-6 lg:mt-10 flex justify-center sm:justify-center lg:justify-start items-center mx-auto lg:mx-0 bg-[#029FAE] text-white text-sm sm:text-base w-[140px] sm:w-[160px] lg:w-[171px] h-[40px] sm:h-[45px] lg:h-[51px] rounded-lg hover:bg-[#90dfe6]">
             <h1 className="ml-2">Shop Now</h1>
             <Image src={RightArrow} alt="Right Arrow" className="w-3 h-[6px] sm:w-4 sm:h-[9px]" />
-          </button>
+          </Link>
         </div>
 
         {/* Right Section */}

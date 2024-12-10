@@ -45,11 +45,9 @@ const Card: React.FC<CardProps> = ({ title, price, label, image, addToCartLink }
         {/* Add to Cart Button */}
         <div className="flex justify-center">
           <Link href={addToCartLink}>
-            <a className="bg-[#029FAE] w-[44px] h-[44px] rounded-lg flex justify-center items-center">
-              <Link href='/cart'>
+            <div className="bg-[#029FAE] hover:bg-[#90dfe6] w-[44px] h-[44px] rounded-lg flex justify-center items-center cursor-pointer">
               <Image src={vector} alt="Add to Cart" className="w-[18.5px] h-[13.49px]" />
-              </Link>
-            </a> 
+            </div>
           </Link>
         </div>
       </div>

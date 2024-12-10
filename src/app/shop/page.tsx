@@ -6,7 +6,6 @@ import p4 from '@/app/assets/p4.png';
 import p5 from '@/app/assets/p5.png';
 import p7 from '@/app/assets/p7.png';
 import p9 from '@/app/assets/p9.png';
-import p11 from '@/app/assets/p11.png';
 
 export default function Shop() {
   return (
@@ -23,7 +22,7 @@ export default function Shop() {
           <h1 className='font-bold text-3xl md:text-6xl'>
             Library Stool <br /> Chair
           </h1>
-          <button className='bg-[#029FAE] w-full md:w-[144px] h-[44px] rounded-3xl text-white text-center'>
+          <button className='bg-[#029FAE] w-full md:w-[144px] h-[44px] rounded-3xl text-white text-center hover:bg-[#90dfe6]'>
             $20.00 USD
           </button>
           <div className='border bg-black h-[1px] w-full md:w-[500px]'></div>
@@ -32,9 +31,9 @@ export default function Shop() {
             Eaque aut, ipsam inventore saepe distinctio dicta adipisci <br />
             fugit quis explicabo doloribus architecto omnis placeat animi
           </p>
-          <div className='flex text-white bg-[#029FAE] rounded-md w-full md:w-[212px] h-[63px] items-center space-x-2 justify-center'>
+          <div className='flex text-white bg-[#029FAE] rounded-md w-full md:w-[212px] h-[63px] items-center space-x-2 justify-center hover:bg-[#90dfe6]'>
             <Image src={cart} alt='Add to Cart' className='w-[22px] h-[21px]' />
-            <button>Add To Cart</button>
+            <button >Add To Cart</button>
           </div>
         </div>
       </div>

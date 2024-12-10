@@ -15,10 +15,10 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <div className="px-4 mt-20">
-      <div className="md:flex py-8 w-full "> {/* Use flex-wrap for better mobile handling */}
+      <div className=" md:flex py-8 w-full "> {/* Use flex-wrap for better mobile handling */}
         {/* Left Section */}
-        <div className="flex flex-col ml-20 md:w-1/3 mb-8 md:mb-0">
-          <div className="flex items-center space-x-4 mb-6 mt-11">
+        <div className="flex flex-col ml-10 md:w-1/3 mb-8 md:mb-0 ">
+          <div className="flex items-center space-x-4 mb-6 mt-11 ">
             <Image src={Logo} alt="Logo" className="w-[26.67px] h-[27.33px]" />
             <h1 className="font-inter font-extrabold text-[28px]">Comforty</h1>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
           </p>
 
           {/* Social Media Icons */}
-          <div className="flex mt-5 space-x-4 justify-center">
+          <div className="flex mt-5 space-x-4 ">
             <Link href="#" className="w-[22px] h-[22px]">
               <Image src={facebook} alt="Facebook" className="mt-2" />
             </Link>
@@ -47,24 +47,24 @@ export default function Footer() {
         </div>
 
         {/* Links Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ml-24 mt-8 md:mt-[50px] md:space-x-12 items-start">
-          <div className="text-sm space-y-3 text-[#272343]">
-            <h1 className="font-semibold text-[#9A9CAA]">Category</h1>
-            <p>Sofa</p>
-            <p>Armchair</p>
-            <p>Wing Chair</p>
-            <p>Desk Chair</p>
-            <p>Wooden Chair</p>
-            <p>Park Bench</p>
-          </div>
-          <div className="text-sm space-y-3 w-24 text-[#272343]">
-            <h1 className="font-semibold text-[#9A9CAA]">Support</h1>
-            <p>Help & Support</p>
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Help</p>
-          </div>
-        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ml-10 mt-8 md:mt-[50px] md:space-x-12 items-start">
+      <div className="text-sm space-y-3 text-[#272343]">
+       <h1 className="font-semibold text-[#9A9CAA]">Category</h1>
+        <Link href="/productsPage" className="block">Sofa</Link>
+        <Link href="/productsPage" className="block">Armchair</Link>
+        <Link href="/productsPage" className="block">Wing Chair</Link>
+        <Link href="/productsPage" className="block">Desk Chair</Link>
+        <Link href="/productsPage" className="block">Wooden Chair</Link>
+        <Link href="/productsPage" className="block">Park Bench</Link>
+      </div>
+    <div className="text-sm space-y-3 w-24 text-[#272343]">
+      <h1 className="font-semibold text-[#9A9CAA]">Support</h1>
+       <Link href="/faqs" className="block">Help & Support</Link>
+       <Link href="/aboutUs" className="block">Terms & Conditions</Link>
+       <Link href="/aboutUs" className="block">Privacy Policy</Link>
+       <Link href="/faqs" className="block">Help</Link>
+    </div>
+   </div>
 
         {/* Newsletter Form and Lorem Text */}
         <div className="mt-5 mb-8 flex flex-col justify-items-start w-full md:w-[424px] mx-auto">
@@ -80,7 +80,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="w-full md:w-[127px] h-[46px] bg-[#029FAE] text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full md:w-[127px] h-[46px] bg-[#029FAE] hover:bg-[#90dfe6] text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 Submit
               </button>
